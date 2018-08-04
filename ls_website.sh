@@ -1,1 +1,1 @@
-aws s3 ls s3://bharathkumarraju.com 
+aws s3 ls s3://bharathkumaraju.com 
