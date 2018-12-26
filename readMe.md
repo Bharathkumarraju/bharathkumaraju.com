@@ -1,5 +1,5 @@
 # [bharathkumaraju.com](https://bharathkumaraju.com)
-BharathKumar Raju'se Official Website
+BharathKumar Raju's Official Website
 
 This repository contains all source code and files for the Website bharathkumaraju.com.
 It is hosted in AWS S3 as a static website and SSL with AWS Certificate Manager(ACM) with CloudFront Distribution.
