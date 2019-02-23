@@ -8,6 +8,5 @@ Feel free to check it and drop me a line if you notice any bug or issue, will do
 
 ```
 See my CV in below link as well.
-
 ```
 ## [bharathkumaraju.com/resume.pdf](https://bharathkumaraju.com/resume.pdf)
