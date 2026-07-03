@@ -1,0 +1,19 @@
+name = "profile-ai-assistant"
+main = "src/index.ts"
+compatibility_date = "2026-02-20"
+
+account_id = "e1ac5beffe2eea29a0d51d4e90a71e19"
+
+# KV namespace for rate limiting + session storage.
+# Create it with:   wrangler kv namespace create PROFILE_DATA
+# then paste the returned id below (replace 2f73c5b9e7584a3daf592bb72a1a857a).
+[[kv_namespaces]]
+binding = "PROFILE_DATA"
+id = "2f73c5b9e7584a3daf592bb72a1a857a"
+
+# Secrets are NOT stored here. Set your OpenAI key with:
+#   wrangler secret put OPENAI_API_KEY
+# (paste the NEW key when prompted — never commit it to git)
+
+[vars]
+# Non-sensitive config can go here if needed.
