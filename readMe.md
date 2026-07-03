@@ -1,4 +1,4 @@
-# bharathkumaraju.com
+# [bharathkumaraju.com](https://bharathkumaraju.com)
 
 Personal profile website (static, single page) + an AI chat assistant.
 
