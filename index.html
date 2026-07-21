@@ -83,9 +83,9 @@ html{scroll-behavior:smooth}
 </nav>
 
 <!-- HERO -->
-<section id="hero" class="min-h-screen flex items-center pt-14 relative">
+<section id="hero" class="flex items-center pt-14 relative">
   <div class="grid-bg absolute inset-0 pointer-events-none"></div>
-  <div class="max-w-6xl mx-auto px-6 py-20 w-full">
+  <div class="max-w-6xl mx-auto px-6 py-10 w-full">
     <div class="grid lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-7 text-center lg:text-left">
         <div class="inline-flex items-center px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-medium mb-6">
@@ -139,23 +139,23 @@ html{scroll-behavior:smooth}
 <div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- ABOUT -->
-<section id="about" class="py-20">
+<section id="about" class="py-12">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid lg:grid-cols-2 gap-12">
-      <div>
+      <div class="flex flex-col">
         <h2 class="text-2xl font-bold text-white mb-6">What I Do</h2>
-        <div class="terminal-border bg-[#0f1623] rounded-xl p-6 hover-card">
+        <div class="terminal-border bg-[#0f1623] rounded-xl p-6 hover-card flex-1">
           <p class="text-slate-300 leading-relaxed mb-4">Senior DevOps &amp; Platform Engineer with <strong class="text-cyan-400">10+ years</strong> building, scaling, and automating cloud-native platforms across <strong class="text-cyan-400">AWS, GCP, and Azure</strong>. I design and operate large-scale Kubernetes platforms, build reusable infrastructure as code, and make software delivery fast, observable, and secure.</p>
           <p class="text-slate-300 leading-relaxed mb-4">I've architected and operated production platforms for financial institutions, telcos, airlines, and fintechs — including a Platform-as-a-Service on AWS EKS hosting trading, clearing, and market-data workloads at a commodity futures exchange and clearinghouse.</p>
           <p class="text-slate-300 leading-relaxed">Across <strong class="text-cyan-400">India, Germany, and Singapore</strong>, my work spans Kubernetes (EKS/GKE), Terraform, CI/CD, multi-cloud networking, observability, and DevSecOps.</p>
         </div>
       </div>
-      <div>
+      <div class="flex flex-col">
         <h2 class="text-2xl font-bold text-white mb-6">How I Do It</h2>
-        <div class="terminal-border bg-[#0f1623] rounded-xl p-6 hover-card">
+        <div class="terminal-border bg-[#0f1623] rounded-xl p-6 hover-card flex-1 flex flex-col">
           <p class="text-slate-300 leading-relaxed mb-4">I lean on disciplined engineering: infrastructure as code with Terraform, GitOps with ArgoCD, declarative observability, and automation that removes toil. I've led an observability migration from Prometheus + Thanos + Tempo to the Elastic Stack, cut cloud spend by ~35% through automation, and reduced environment setup time by ~40% with reusable Terraform modules.</p>
           <p class="text-slate-300 leading-relaxed mb-4">As a <strong class="text-cyan-400">CNCF Kubestronaut</strong> (CKA, CKAD, CKS, KCNA, KCSA), I care deeply about running Kubernetes securely and reliably in regulated, financial-grade environments — from network firewalls and segmentation to secrets management and CIS benchmarks.</p>
-          <div class="mt-6 pt-4 border-t border-white/5">
+          <div class="mt-auto pt-4 border-t border-white/5">
             <span class="text-xs text-slate-400 uppercase tracking-wider">Author of:</span>
             <span class="text-sm ml-2"><a href="https://cka.devops4itengineers.com/" target="_blank" rel="noopener" class="text-cyan-400 hover:text-cyan-300 transition-colors">CKA Book</a> · <a href="https://aillm.devops4itengineers.com/" target="_blank" rel="noopener" class="text-cyan-400 hover:text-cyan-300 transition-colors">AI-LLM Learning Hub</a></span>
           </div>
@@ -168,16 +168,16 @@ html{scroll-behavior:smooth}
 <div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- FOCUS -->
-<section id="focus" class="py-20">
+<section id="focus" class="py-12">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-2xl font-bold text-white mb-4">Areas of Focus</h2>
     <p class="text-slate-400 mb-8">Where I spend my time — the practices and platforms I build teams and systems around.</p>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">Kubernetes &amp; Platform</div><p class="text-sm text-slate-400">Architecting and operating large-scale PaaS on AWS EKS and GKE — multi-environment clusters, Helm charts, PDBs, node group scaling, secure workload access, and production-grade day-2 operations.</p></div>
       <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">Infrastructure as Code</div><p class="text-sm text-slate-400">Reusable Terraform modules for AWS/GitHub provisioning, declarative alerting, secrets/KMS/ACM automation. Cut environment setup time ~40% and improved consistency across environments.</p></div>
-      <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">Cloud Networking &amp; Security</div><p class="text-sm text-slate-400">VPC design, Transit Gateway, Network Firewall, PrivateLink endpoint services, per-ISV security group segmentation, WAF, and VPN-only enforcement across multi-account AWS environments.</p></div>
+      <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">Cloud Networking &amp; Security</div><p class="text-sm text-slate-400">AWS: VPC design, Transit Gateway, Network Firewall, PrivateLink, WAF, and VPN-only enforcement across multi-account environments. GCP: multi-project Shared VPC with node/Pod/Service CIDR planning, NEG container-native load balancing, and GKE Autopilot/Standard clusters.</p></div>
       <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">Observability</div><p class="text-sm text-slate-400">Prometheus, Grafana, Loki, Thanos, Tempo, and the Elastic Stack. Led migration to Elastic Cloud with alerting managed declaratively in Terraform; built monitoring stacks for VPN and connectivity.</p></div>
-      <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">CI/CD &amp; GitOps</div><p class="text-sm text-slate-400">GitHub Actions, ArgoCD, Jenkins, GitLab CI. Self-hosted runners on EKS with Terraform + Helm, golden pipelines, and secure multi-account delivery.</p></div>
+      <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">CI/CD &amp; GitOps</div><p class="text-sm text-slate-400">GitHub Actions, ArgoCD, Jenkins, GitLab CI. Self-hosted runners on EKS with Terraform + Helm, golden pipelines, secure multi-account delivery, and centralized CI/CD with a dedicated monitoring GKE cluster in separate GCP projects.</p></div>
       <div class="terminal-border bg-[#0f1623] rounded-lg p-5 hover-card"><div class="text-cyan-400 font-semibold mb-2">DevSecOps &amp; Cost</div><p class="text-sm text-slate-400">CIS benchmarks, image scanning, Vault/External Secrets, EKS Pod Identity/IRSA, VAPT remediation, and cloud-cost optimization automation reducing spend by ~35%.</p></div>
     </div>
   </div>
@@ -186,7 +186,7 @@ html{scroll-behavior:smooth}
 <div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- CAREER -->
-<section id="career" class="py-20">
+<section id="career" class="py-12">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-2xl font-bold text-white mb-8">Career Timeline</h2>
     <div class="relative space-y-8">
@@ -326,7 +326,7 @@ html{scroll-behavior:smooth}
 <div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- SKILLS -->
-<section id="skills" class="py-20">
+<section id="skills" class="py-12">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-2xl font-bold text-white mb-8">Technical Skills</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -411,7 +411,7 @@ html{scroll-behavior:smooth}
 <div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- CERTIFICATIONS -->
-<section id="certs" class="py-20">
+<section id="certs" class="py-12">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-2xl font-bold text-white mb-4">Certifications</h2>
     <p class="text-slate-400 mb-8">CNCF Kubestronaut — all five CNCF Kubernetes certifications — plus multi-cloud and IaC credentials.</p>
@@ -435,23 +435,19 @@ html{scroll-behavior:smooth}
 <div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- WRITING / PUBLICATIONS -->
-<section id="writing" class="py-20">
+<section id="writing" class="py-12">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-2xl font-bold text-white mb-4">Writing &amp; Publications</h2>
     <p class="text-slate-400 mb-8">Books, learning hubs, and technical articles on Kubernetes, Terraform, AWS, and AI/LLMs.</p>
-    <div class="grid md:grid-cols-2 gap-4">
-      <div class="space-y-3">
+    <div class="grid md:grid-cols-2 gap-3">
         <a href="https://cka.devops4itengineers.com/" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card border border-cyan-500/20 block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">CKA Book</h3><p class="text-xs text-cyan-400 mt-1">Certified Kubernetes Administrator study guide</p></a>
         <a href="https://aillm.devops4itengineers.com/" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card border border-cyan-500/20 block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">AI-LLM Learning Hub</h3><p class="text-xs text-cyan-400 mt-1">aillm.devops4itengineers.com</p></a>
         <a href="https://medium.com/@bhrth.dsra1/deploy-gha-self-hosted-runners-on-aws-eks-with-terraform-and-helm-6624815738b6" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">Deploy GHA Self-Hosted Runners on AWS EKS with Terraform and Helm</h3><p class="text-xs text-slate-500 mt-1">Medium</p></a>
         <a href="https://medium.com/@bhrth.dsra1/tokenization-visualizing-vector-embeddings-in-multi-dimensional-space-3d-dc4667402b4e" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">Tokenization &amp; Visualizing Vector Embeddings in 3D Space</h3><p class="text-xs text-slate-500 mt-1">Medium</p></a>
-      </div>
-      <div class="space-y-3">
         <a href="https://medium.com/@bhrth.dsra1/terraform-1-11-0-unlocks-secure-aws-rds-secrets-with-write-only-attributes-047bf15d9a45" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">Terraform 1.11.0 Unlocks Secure AWS RDS Secrets with Write-Only Attributes</h3><p class="text-xs text-slate-500 mt-1">Medium</p></a>
         <a href="https://medium.com/@bhrth.dsra1/stateless-vs-stateful-b5cf56e92057" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">Stateless vs Stateful Architectures</h3><p class="text-xs text-slate-500 mt-1">Medium</p></a>
         <a href="https://medium.com/@bhrth.dsra1/google-cloud-container-native-loadbalancer-f529e98e8fe5" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">Google Cloud Container-Native Load Balancer</h3><p class="text-xs text-slate-500 mt-1">Medium</p></a>
         <a href="https://medium.com/@bhrth.dsra1/aws-securely-share-app-to-clients-with-privatelink-via-endpoint-service-6215d9965c03" target="_blank" rel="noopener" class="terminal-border bg-[#0f1623] rounded-lg p-4 hover-card block"><h3 class="text-sm font-semibold text-white hover:text-cyan-400 transition-colors">AWS: Securely Share Apps to Clients with PrivateLink via Endpoint Service</h3><p class="text-xs text-slate-500 mt-1">Medium</p></a>
-      </div>
     </div>
   </div>
 </section>
@@ -459,7 +455,7 @@ html{scroll-behavior:smooth}
 <div class="section-divider max-w-6xl mx-auto"></div>
 
 <!-- EDUCATION -->
-<section id="education" class="py-20">
+<section id="education" class="py-12">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-2xl font-bold text-white mb-8">Education</h2>
     <div class="grid md:grid-cols-2 gap-6">
